@@ -9,7 +9,7 @@ $(function() {
     };
 
     // Send the PUT request.
-    $.ajax("/api/cats/" + id, {
+    $.ajax("/api/burgers/" + id, {
       type: "PUT",
       data: newSleepState
     }).then(
@@ -25,15 +25,15 @@ $(function() {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
-    var newCat = {
+    var newBurger = {
       name: $("#ca").val().trim(),
       sleepy: $("[name=sleepy]:checked").val().trim()
     };
 
     // Send the POST request.
-    $.ajax("/api/cats", {
+    $.ajax("/api/burgers", {
       type: "POST",
-      data: newCat
+      data: newBurger
     }).then(
       function() {
         console.log("created new cat");
@@ -43,17 +43,17 @@ $(function() {
     );
   });
 
-  $(".deleteCat").on("click", function(event) {
+  $(".deleteBurger").on("click", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
     
     var id = $(this).data("id");
     // Send the POST request.
-    $.ajax(`/api/cats/${id}`, {
+    $.ajax(`/api/burgers/${id}`, {
       type: "DELETE"
     }).then(
       function() {
-        console.log("deleted cat");
+        console.log("deleted burger");
         // Reload the page to get the updated list
         location.reload();
       }
