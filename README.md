@@ -6,7 +6,8 @@ https://github.com/KimberliTompkins/Burger_Logger -  Deployed link: https://salt
 
 ## *Description* 
 
-Use this app to keep track of burgers in a mySql database.  You will be able to keep track of the burger's status ( devoured or waiting to be) by the click of a button.  The burger position on the screen will change based on if it's status.  Throw the burger away when you no longer want to keep track of it. 
+Use this app to keep track of burgers in a mySQL database.  You will be able to keep track of the burger's status ( devoured or waiting to be) by the click of a button.  The burger position on the screen will change based on the status.  Throw the burger away when you no longer want to keep track of it. 
+
 ![screen shot](https://salty-springs-58678.herokuapp.com/assets/images/Capture.PNG)
 
 
